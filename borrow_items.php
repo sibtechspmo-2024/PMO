@@ -93,11 +93,14 @@ $default_fullname = $user_stmt->get_result()->fetch_assoc()['fullname'] ?? '';
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-ecommerce sticky-top">
     <div class="container px-4">
-        <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="user_dashboard.php">
+        <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="home.php">
             <img src="logo.jpg" alt="SIBTECH Logo" class="navbar-brand-logo rounded-circle border border-2 border-white shadow-sm me-2" style="width: 38px;">
             <span>SIBTECH BORROW PORTAL</span>
         </a>
         <div class="d-flex align-items-center gap-2">
+            <a href="home.php" class="btn btn-outline-light btn-sm fw-semibold rounded-pill px-3">
+                <i class="bi bi-house-door-fill me-1"></i> Home
+            </a>
             <a href="user_dashboard.php" class="btn btn-outline-light btn-sm fw-semibold rounded-pill px-3">
                 <i class="bi bi-grid-fill me-1"></i> Supply Store
             </a>
@@ -206,8 +209,8 @@ $default_fullname = $user_stmt->get_result()->fetch_assoc()['fullname'] ?? '';
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center pt-2">
-                    <a href="user_dashboard.php" class="btn btn-light rounded-pill px-4 fw-bold text-dark">
-                        <i class="bi bi-arrow-left me-1"></i> Bumalik sa Dashboard
+                    <a href="home.php" class="btn btn-light rounded-pill px-4 fw-bold text-dark">
+                        <i class="bi bi-arrow-left me-1"></i> Bumalik sa Home
                     </a>
                     <button type="submit" id="submitBtn" class="btn btn-primary btn-lg rounded-pill px-5 fw-bold shadow-sm" style="background-color: #1b4f9c;">
                         <i class="bi bi-send-fill me-2"></i> Submit Borrow Request

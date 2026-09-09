@@ -402,7 +402,7 @@ if (isset($_GET['fetch_live_data']) && $_GET['fetch_live_data'] == '1') {
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-history sticky-top shadow-sm" style="background-color: #1b4f9c;">
     <div class="container-fluid px-4">
-        <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="<?= (strtolower($_SESSION['role'] ?? '') === 'admin') ? 'admin_dashboard.php' : 'user_dashboard.php' ?>">
+        <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="<?= (strtolower($_SESSION['role'] ?? '') === 'admin') ? 'admin_dashboard.php' : 'home.php' ?>">
             <img src="logo.jpg" alt="SIBTECH Logo" class="navbar-brand-logo rounded-circle border border-2 border-white me-2" style="width: 38px;">
             <div class="lh-1">
                 <span class="fs-5 d-block">SIBTECH SCHEDULE & CALENDAR</span>
@@ -415,6 +415,9 @@ if (isset($_GET['fetch_live_data']) && $_GET['fetch_live_data'] == '1') {
                     <i class="bi bi-speedometer2 me-1"></i> Admin Dashboard
                 </a>
             <?php else: ?>
+                <a href="home.php" class="btn btn-outline-light btn-sm rounded-pill px-3 me-2">
+                    <i class="bi bi-house-door-fill me-1"></i> Home
+                </a>
                 <a href="user_dashboard.php" class="btn btn-outline-light btn-sm rounded-pill px-3 me-2">
                     <i class="bi bi-grid-fill me-1"></i> Supply Store
                 </a>

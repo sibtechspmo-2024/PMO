@@ -226,13 +226,16 @@ $maint_items = $conn->query("SELECT * FROM maintenance_items WHERE actual_stocks
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-ecommerce sticky-top">
     <div class="container px-4">
-        <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="user_dashboard.php">
+        <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="home.php">
             <img src="logo.jpg" alt="SIBTECH Logo" class="navbar-brand-logo rounded-circle border border-2 border-white shadow-sm me-2" style="width: 38px;">
             <span>SIBTECH SUPPLY ROOM <span class="fw-light opacity-75"></span>
         </a>
         <div class="d-flex align-items-center gap-2">
+            <a href="home.php" class="btn btn-outline-light btn-sm fw-semibold rounded-pill px-3">
+                <i class="bi bi-house-door-fill me-1"></i> Home
+            </a>
             <a href="user_dashboard.php" class="btn btn-outline-light btn-sm fw-semibold rounded-pill px-3">
-                <i class="bi bi-grid-fill me-1"></i> Supply Room
+                <i class="bi bi-grid-fill me-1"></i> Supply Store
             </a>
             <a href="request_history.php" class="btn btn-outline-light btn-sm fw-semibold rounded-pill px-3">
                 <i class="bi bi-bag-check-fill me-1"></i> My Requests
@@ -406,8 +409,8 @@ $maint_items = $conn->query("SELECT * FROM maintenance_items WHERE actual_stocks
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center pt-2">
-                    <a href="user_dashboard.php" class="btn btn-light rounded-pill px-4 fw-bold text-dark">
-                        <i class="bi bi-arrow-left me-1"></i> Back to select supply
+                    <a href="home.php" class="btn btn-light rounded-pill px-4 fw-bold text-dark">
+                        <i class="bi bi-arrow-left me-1"></i> Back to Home
                     </a>
                     <button type="submit" id="submitOrderBtn" class="btn btn-primary-logo btn-lg rounded-pill px-5 fw-bold shadow-sm" disabled>
                         <i class="bi bi-send-fill me-2"></i> Submit Request

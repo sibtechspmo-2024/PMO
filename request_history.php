@@ -148,18 +148,21 @@ $maint_requests = $conn->query("
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-history sticky-top shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-history sticky-top shadow-sm" style="background-color: #1b4f9c;">
     <div class="container-fluid px-4">
-        <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="user_dashboard.php">
-            <img src="logo.jpg" alt="SIBTECH Logo" class="navbar-brand-logo rounded-circle border border-2 border-white">
+        <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="home.php">
+            <img src="logo.jpg" alt="SIBTECH Logo" class="navbar-brand-logo rounded-circle border border-2 border-white me-2" style="width: 38px;">
             <div class="lh-1">
                 <span class="fs-5 d-block">SIBTECH STORE</span>
                 <small class="fw-light opacity-75" style="font-size: 0.72rem;">My Order History</small>
             </div>
         </a>
         <div class="d-flex align-items-center">
-            <a href="user_dashboard.php" class="btn btn-outline-light btn-sm rounded-pill px-3 me-3">
-                <i class="bi bi-cart-plus-fill me-1"></i> New Order
+            <a href="home.php" class="btn btn-outline-light btn-sm rounded-pill px-3 me-2">
+                <i class="bi bi-house-door-fill me-1"></i> Home
+            </a>
+            <a href="user_dashboard.php" class="btn btn-outline-light btn-sm rounded-pill px-3 me-2">
+                <i class="bi bi-grid-fill me-1"></i> Supply Store
             </a>
             <a href="logout.php" class="btn btn-outline-light btn-sm rounded-pill px-3">
                 <i class="bi bi-box-arrow-right me-1"></i> Logout

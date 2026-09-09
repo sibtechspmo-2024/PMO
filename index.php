@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
             if (strtolower($user['role']) == 'admin') {
                 header("Location: admin_dashboard.php");
             } else {
-                header("Location: user_dashboard.php");
+                header("Location: home.php");
             }
             exit;
         } else {
