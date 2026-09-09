@@ -146,3 +146,69 @@
 [Wed Sep  9 06:24:36 2026] 127.0.0.1:53148 Closing
 [Wed Sep  9 06:24:36 2026] 127.0.0.1:53162 Closing
 [Wed Sep  9 06:24:36 2026] 127.0.0.1:53174 Closing
+[Wed Sep  9 06:46:03 2026] 127.0.0.1:55660 Accepted
+[Wed Sep  9 06:46:03 2026] 127.0.0.1:55660 [200]: GET /index.php
+[Wed Sep  9 06:46:03 2026] 127.0.0.1:55660 Closing
+[Wed Sep  9 06:46:03 2026] 127.0.0.1:55674 Accepted
+[Wed Sep  9 06:46:03 2026] 127.0.0.1:55686 Accepted
+[Wed Sep  9 06:46:03 2026] 127.0.0.1:55674 [200]: GET /css/index.css
+[Wed Sep  9 06:46:03 2026] 127.0.0.1:55686 [200]: GET /logo.jpg
+[Wed Sep  9 06:46:03 2026] 127.0.0.1:55674 Closing
+[Wed Sep  9 06:46:03 2026] 127.0.0.1:55686 Closing
+[Wed Sep  9 06:46:04 2026] 127.0.0.1:55694 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55694 [302]: POST /index.php
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55694 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55698 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55698 [200]: GET /user_dashboard.php
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55698 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55714 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55720 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55714 [200]: GET /css/user_dashboard.css
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55714 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55720 [200]: GET /logo.jpg
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55720 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55734 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55734 [200]: GET /user_dashboard.php?action=get_notifications
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55734 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55746 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55746 [200]: GET /sw.js
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55746 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55756 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55766 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55776 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55756 [200]: GET /
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55756 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55766 [200]: GET /index.php
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55766 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55776 [200]: GET /manifest.json
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55776 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55790 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55800 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55804 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55790 [200]: GET /logo.jpg
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55800 [200]: GET /css/index.css
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55804 [200]: GET /css/user_dashboard.css
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55790 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55800 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55804 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55816 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55822 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55816 [200]: GET /css/admin_dashboard.css
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55826 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55822 [200]: GET /css/admin_office.css
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55826 [200]: GET /css/admin_maintenance.css
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55816 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55822 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55826 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55836 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55838 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55850 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55836 [200]: GET /css/in_stock.css
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55838 [200]: GET /css/request_history.css
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55850 [200]: GET /icons/icon-192.png
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55836 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55838 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55850 Closing
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55866 Accepted
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55866 [200]: GET /icons/icon-512.png
+[Wed Sep  9 06:46:05 2026] 127.0.0.1:55866 Closing

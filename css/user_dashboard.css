@@ -4,18 +4,23 @@
     --logo-blue-dark: #0d2852;
     --logo-yellow: #f5be16;
     --logo-dark: #0f172a;
-    --logo-light-bg: #f4f6f9;
-    --border-sketch: #333333;
+    --logo-light-bg: #f1f5f9;
+    --border-color: #3b3c3e;
+    --card-border: #475569;
     --tile-bg: #ffffff;
-    --tile-hover-bg: #f8fafc;
+    --tile-hover-bg: #ffffff;
+    --active-blue-border: #3b82f6;
 }
 
 body.dashboard-body {
     background-color: var(--logo-light-bg);
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     color: var(--logo-dark);
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* NAVBAR & HEADER */
@@ -31,82 +36,81 @@ body.dashboard-body {
     object-fit: cover;
 }
 
-/* LOGOUT BOX BUTTON - Styled like the boxed Logout button in user sketch */
-.btn-logout-box {
-    background-color: #ffffff;
-    color: #111111;
-    border: 2.5px solid #222222;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    box-shadow: 2px 2px 0px #222222;
-    transition: all 0.2s ease;
+.main-container {
+    flex: 1;
 }
 
-.btn-logout-box:hover {
-    background-color: #f3f4f6;
-    color: #000000;
-    transform: translate(-1px, -1px);
-    box-shadow: 4px 4px 0px #222222;
-}
-
-.btn-logout-box:active {
-    transform: translate(1px, 1px);
-    box-shadow: 1px 1px 0px #222222;
-}
-
-/* 2x2 DASHBOARD TILE CARDS */
+/* 2x2 DASHBOARD TILE CARDS (Exact match to image.png) */
 .dashboard-tile-card {
-    background-color: var(--tile-bg);
-    border: 2px solid #222222;
+    background-color: #ffffff;
+    border: 1.5px solid #2d3748;
     border-radius: 12px;
-    padding: 3rem 2rem;
+    padding: 3.25rem 2rem;
     min-height: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
-    transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease-in-out;
     position: relative;
     cursor: pointer;
 }
 
+.dashboard-tile-card.active-blue-border,
 .dashboard-tile-card:hover {
-    background-color: var(--tile-hover-bg);
-    border-color: var(--logo-blue);
-    transform: translateY(-4px);
-    box-shadow: 6px 10px 20px rgba(27, 79, 156, 0.18);
+    border: 2px solid #3b82f6;
+    box-shadow: 0 6px 18px rgba(59, 130, 246, 0.12);
 }
 
 .tile-icon {
-    font-size: 2.75rem;
+    font-size: 2.85rem;
     line-height: 1;
 }
 
+.text-primary {
+    color: #3b82f6 !important;
+}
+
+.text-warning {
+    color: #eab308 !important;
+}
+
+.text-info {
+    color: #06b6d4 !important;
+}
+
+.text-success {
+    color: #10b981 !important;
+}
+
 .tile-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    letter-spacing: -0.3px;
-    margin-bottom: 0.5rem;
-    color: #111111;
+    color: #0f172a;
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.2px;
 }
 
 .tile-description {
-    font-size: 0.95rem;
+    font-size: 0.875rem;
     font-weight: 500;
+    color: #64748b;
     margin-bottom: 0;
-    line-height: 1.4;
-    max-width: 90%;
+    line-height: 1.45;
+    max-width: 92%;
 }
 
 @media (max-width: 768px) {
     .dashboard-tile-card {
-        padding: 2rem 1.25rem;
+        padding: 2.25rem 1.25rem;
         min-height: 180px;
     }
     .tile-title {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
+    }
+    .tile-description {
+        font-size: 0.8rem;
     }
 }

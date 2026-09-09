@@ -58,7 +58,7 @@ $default_fullname = $user_stmt->get_result()->fetch_assoc()['fullname'] ?? '';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard - SIBTECH</title>
+    <title>SIBTECH - Home Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/user_dashboard.css">
@@ -105,67 +105,69 @@ $default_fullname = $user_stmt->get_result()->fetch_assoc()['fullname'] ?? '';
                 <i class="bi bi-bag-check-fill me-1"></i> My Requests
             </a>
 
-            <!-- LOGOUT BUTTON (Matching top-right Logout button in user sketch) -->
-            <a href="logout.php" class="btn btn-logout-box fw-bold px-4 py-2 text-decoration-none">
-                Logout
+            <!-- LOGOUT BUTTON -->
+            <a href="logout.php" class="btn btn-outline-light btn-sm fw-semibold rounded-pill px-3">
+                <i class="bi bi-box-arrow-right me-1"></i> Logout
             </a>
         </div>
     </div>
 </nav>
 
-<div class="container py-5 min-vh-100 d-flex flex-column justify-content-center">
-    <!-- DASHBOARD 2x2 MAIN GRID -->
-    <div class="row g-4 justify-content-center my-auto">
-        <!-- CARD 1: Request Office Supply -->
-        <div class="col-12 col-md-6 col-lg-6">
-            <a href="place_order.php?type=office" class="text-decoration-none">
-                <div class="dashboard-tile-card">
-                    <div class="tile-icon text-primary mb-3">
-                        <i class="bi bi-box-seam"></i>
+<div class="main-container d-flex align-items-center justify-content-center py-5">
+    <div class="container" style="max-width: 1040px;">
+        <!-- HOME PAGE 2x2 MAIN GRID -->
+        <div class="row g-4 justify-content-center">
+            <!-- CARD 1: Request office Supply -->
+            <div class="col-12 col-md-6">
+                <a href="place_order.php?type=office" class="text-decoration-none">
+                    <div class="dashboard-tile-card active-blue-border">
+                        <div class="tile-icon text-primary mb-3">
+                            <i class="bi bi-box-seam"></i>
+                        </div>
+                        <h4 class="tile-title text-dark fw-bold">Request office Supply</h4>
+                        <p class="tile-description text-muted">Requisition for paper, pens, desk accessories and official office supplies.</p>
                     </div>
-                    <h3 class="tile-title text-dark">Request office Supply</h3>
-                    <p class="tile-description text-muted">Requisition for paper, pens, desk accessories and official office supplies.</p>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
 
-        <!-- CARD 2: Request Maintenance Supply -->
-        <div class="col-12 col-md-6 col-lg-6">
-            <a href="place_order.php?type=maintenance" class="text-decoration-none">
-                <div class="dashboard-tile-card">
-                    <div class="tile-icon text-warning mb-3">
-                        <i class="bi bi-tools"></i>
+            <!-- CARD 2: Request Maintenance Supply -->
+            <div class="col-12 col-md-6">
+                <a href="place_order.php?type=maintenance" class="text-decoration-none">
+                    <div class="dashboard-tile-card">
+                        <div class="tile-icon text-warning mb-3">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h4 class="tile-title text-dark fw-bold">Request Maintenance Supply</h4>
+                        <p class="tile-description text-muted">Requisition for hardware tools, electrical, cleaning, and repair supplies.</p>
                     </div>
-                    <h3 class="tile-title text-dark">Request Maintenance Supply</h3>
-                    <p class="tile-description text-muted">Requisition for hardware tools, electrical, cleaning, and repair supplies.</p>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
 
-        <!-- CARD 3: Borrow Equipment -->
-        <div class="col-12 col-md-6 col-lg-6">
-            <a href="borrow_items.php" class="text-decoration-none">
-                <div class="dashboard-tile-card">
-                    <div class="tile-icon text-info mb-3">
-                        <i class="bi bi-laptop"></i>
+            <!-- CARD 3: Borrow Equipment -->
+            <div class="col-12 col-md-6">
+                <a href="borrow_items.php" class="text-decoration-none">
+                    <div class="dashboard-tile-card">
+                        <div class="tile-icon text-info mb-3">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h4 class="tile-title text-dark fw-bold">Borrow Equipment</h4>
+                        <p class="tile-description text-muted">Request borrowing of projectors, sound systems, cables, and electronic devices.</p>
                     </div>
-                    <h3 class="tile-title text-dark">Borrow Equipment</h3>
-                    <p class="tile-description text-muted">Request borrowing of projectors, sound systems, cables, and electronic devices.</p>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
 
-        <!-- CARD 4: Request Schedule for classrooms and facilities -->
-        <div class="col-12 col-md-6 col-lg-6">
-            <a href="user_schedule.php" class="text-decoration-none">
-                <div class="dashboard-tile-card">
-                    <div class="tile-icon text-success mb-3">
-                        <i class="bi bi-calendar-event"></i>
+            <!-- CARD 4: Request Schedule for classrooms and facilities -->
+            <div class="col-12 col-md-6">
+                <a href="user_schedule.php" class="text-decoration-none">
+                    <div class="dashboard-tile-card">
+                        <div class="tile-icon text-success mb-3">
+                            <i class="bi bi-calendar-event"></i>
+                        </div>
+                        <h4 class="tile-title text-dark fw-bold">Request Schedule for classrooms and facilities</h4>
+                        <p class="tile-description text-muted">Book rooms, view whiteboard event schedules, and request facility reservations.</p>
                     </div>
-                    <h3 class="tile-title text-dark">Request Schedule for classrooms and facilities</h3>
-                    <p class="tile-description text-muted">Book rooms, view whiteboard event schedules, and request facility reservations.</p>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </div>
 </div>
