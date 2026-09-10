@@ -1070,7 +1070,7 @@ $is_req_hist = isset($_GET['req_status']) || isset($_GET['req_cat']);
                                 <th class="text-end">Action</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="print-requests-tbody">
                             <?php if (!empty($print_requests_list)): ?>
                                 <?php foreach ($print_requests_list as $p): ?>
                                     <tr>
